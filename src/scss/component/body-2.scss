@@ -1,0 +1,116 @@
+.nav-bg{
+    background-color:#f4ede4;
+    .container{
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+    .nav-video{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-vd{
+        max-width: 50%;
+        height: auto;
+    }
+    .nav-vd video{
+        // max-height: 345px;
+        max-width: 100%;
+    }
+    .nav-content-right{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10rem;
+    }
+    .nav-content-right h1{
+        color: #000;
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 1.12;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    .nav-content-right p{
+        color: #000;
+        line-height: 1.4444;
+        font-size: 1.8rem;
+        font-weight: 400;
+        padding-right: 11rem;
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    .nav-content-right a{
+        color: #1264a3;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding-left: 2rem;
+        border-bottom-width: 2px;
+    }
+    .nav-content-left{
+        // width: 46rem;
+        width: 50%;
+    }
+    .nav-content-left h1{
+        color: #000;
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 1.12;
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    .nav-content-left p{
+        color: #000;
+        padding-left: 2rem;
+        line-height: 1.4444;
+        font-weight: 400;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    .nav-content-left a{
+        color: #1264a3;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding-left: 2rem;
+        border-bottom-width: 2px;
+    }
+    .link__learn{
+        display: inline-block;
+        padding: 0 !important;
+        margin-left: 2rem;
+        padding-bottom: 0.5rem !important;
+        position: relative;
+        transition: 0.3s;
+        &:hover::after{
+            width: 100%;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            height: 0.2rem;
+            background-color: #1264a3;
+            left: 0;
+            width: 0%;
+            bottom: 0;
+            transition: 0.3s;
+        }
+
+    }
+    @media (max-width: 1020px) {
+        .video{
+            display: inline-block;
+            margin-left: 0;
+            padding-left: 0;
+        }
+    }
+        
+}
+
+
+
+
+
+
