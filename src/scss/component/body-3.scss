@@ -1,0 +1,247 @@
+.body-3 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 3rem 0;
+    .container{
+       margin: auto 0;
+       border: 3px solid gray;
+       max-width: 1320px;
+       padding: 0 1rem;
+       border: none;
+       display: block;
+       padding-top: 20px;
+    }
+    .icon{
+        display: block;
+        max-width: 1320px;
+        height: 480px;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .icon1{
+        right: 15%;
+        top: 30px;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    .icon2{
+        left: 15%;
+        top: 30px;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    .icon3{
+        right: 20%;
+        top: 100px;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    .icon4{
+        right: 15%;
+        top: 150px;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    .icon5{
+        left: 20%;
+        top: 100px;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    .icon6{
+        left: 15%;
+        top: 150px;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+    }
+
+
+
+    .title{
+        text-align: center;
+        font-size: 30px;
+        padding-top:2rem ;
+    }
+    .u-text{
+        text-align: center;
+        font-size: 13px;
+    }
+    .button-block a{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 19px 40px 20px;
+        transition: 420ms;
+        font-weight: 700;
+        display: flex;
+        display: inline-block;
+        border-radius: 4px;
+    }
+    .button-block{
+        border: none;
+        display: block;
+        margin: 0 auto;
+        width: auto;
+        text-align: center;
+        border: none;
+        line-height: 1.2857;
+        width: 100%;
+        background: 0 0;
+        letter-spacing: .8px;
+        height: 100%;
+        border-radius: 4px;
+        
+
+    }
+    .button-primary{
+        background-color: #611f69;
+        color: #fff;
+        &:hover {
+            background-color: #400247;
+        }
+    }
+    .button-secondary{
+        background-color: #fff;
+        color: #611f69;
+        fill: #611f69;
+        box-shadow: 0 0 0 1px #611f69;
+        margin: 16px 0px 0px 8px;
+        &:hover {
+            box-shadow: 0 0 0 1px #220126;
+        }
+    }
+    .number{
+        color: #611f69;
+        font-size: calc(3rem + (16 * (100vw - 400px)/ 624));
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: normal;
+    }
+    
+    .detail{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 5rem!important;
+        font-weight: 400;
+        line-height: 1.4444;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+    .info p{
+        display: block;
+        letter-spacing: normal;
+        margin: auto 0;
+        line-height: 1.4286;
+        font-weight: 700;
+    }
+    .video-text{
+        margin: auto 0;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        display: flex;
+        // flex-direction: column;
+        padding: 2rem;
+    }
+    .video-text {
+        display: flex;
+        flex-wrap: nowrap;
+        .video-content{
+            width: 50%;
+            flex-direction: column;
+            padding: 2em;
+        }
+        .video-content p{
+            font-size: 1.75rem;
+            font-weight: 300;
+            line-height: 1.364;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        .video-vd{
+            width: 50%;
+            height: auto;
+            video{
+                max-width: 100%;
+                height: auto;
+                border-top-right-radius: 500px;
+                overflow: hidden;
+                border-bottom-right-radius: 500px;
+            }
+        }
+    }
+    .p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .author{
+        font-weight: 700;
+    }
+    .average-userSlack{
+        color: #696969;
+        font-size: calc(.875rem + (0 * (100vw - 400px)/ 624));
+        font-weight: 400;
+        line-height: 1.2857;
+        letter-spacing: normal;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        text-align: center;
+    }
+    .link__learn{
+        display: inline-block;
+        padding: 0 !important;
+        margin-left: 2rem;
+        padding-bottom: 0.5rem !important;
+        position: relative;
+        transition: 0.3s;
+        text-decoration: none;
+        color: #1264a3;
+        padding-top: 2rem!important;
+        &:hover::after{
+            width: 100%;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            height: 0.2rem;
+            background-color: #1264a3;
+            left: 0;
+            width: 0%;
+            bottom: 0;
+            transition: 0.5s;
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .button-block{
+        display: block !important;
+        .button-primary{
+            width: 100%;
+        }
+        .button-secondary{
+            width: 100%;
+        }
+    }
+   
+}
+@media (max-width: 900px) {
+    .body-3 .container .content-container .icon{
+        display: none;
+    }
+}
